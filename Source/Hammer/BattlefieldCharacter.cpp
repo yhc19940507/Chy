@@ -54,12 +54,12 @@ void ABattlefieldCharacter::TurnAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
 	if (Rate != 0.f&&battlefieldPlayerController->GetIsRightMouseDown())
-		AddControllerYawInput(Rate * 10.0f * GetWorld()->GetDeltaSeconds());
+		AddControllerYawInput(Rate * 20.0f * GetWorld()->GetDeltaSeconds());
 }
 
 void ABattlefieldCharacter::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
 	if (Rate != 0.f&&battlefieldPlayerController->GetIsRightMouseDown())
-		AddControllerPitchInput(Rate * 10.0f * GetWorld()->GetDeltaSeconds());
+		AddControllerPitchInput(Rate * 20.0f * GetWorld()->GetDeltaSeconds());
 }
