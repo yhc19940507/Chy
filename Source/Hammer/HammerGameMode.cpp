@@ -4,10 +4,9 @@
 #include "HammerPlayerController.h"
 #include "HammerCharacter.h"
 #include "UObject/ConstructorHelpers.h"
-#include "BattlefieldPlayerController.h"
-#include "BattlefieldPlayerController.h"
-#include "PathDefine.h"
-#include "BattlefieldHUD.h"
+#include "Battlefield/BattlefieldPlayerController.h"
+#include "Battlefield/PathDefine.h"
+#include "Battlefield/BattlefieldHUD.h"
 AHammerGameMode::AHammerGameMode()
 {
 	// use our custom PlayerController class

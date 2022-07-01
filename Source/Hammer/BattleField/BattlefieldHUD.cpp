@@ -12,7 +12,7 @@ void ABattlefieldHUD::ReceiveDrawHUD(int32 SizeX, int32 SizeY)
 		battlefieldPlayerController->GetMousePosLClick(mousePosx,mousePosy);
 		float curmousePosx, curmousePosy;
 		battlefieldPlayerController->GetMousePosition(curmousePosx, curmousePosy);
-		DrawRect(FLinearColor(00, 00, 00, 3), mousePosx, mousePosy, (curmousePosx- mousePosx), (curmousePosy - mousePosy));
+		DrawRect(FLinearColor(0xFF, 0xFF, 0xff, 255), mousePosx, mousePosy, (curmousePosx- mousePosx), (curmousePosy - mousePosy));
 	}
 	
 

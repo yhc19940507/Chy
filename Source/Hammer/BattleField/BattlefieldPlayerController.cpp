@@ -5,9 +5,11 @@
 #include "Blueprint/UserWidget.h"
 #include "PathDefine.h"
 #include "Engine.h"
+
+
  ABattlefieldPlayerController::ABattlefieldPlayerController()
 {
-
+	 LoadManager::GetInstance()->LoadArmsBaseProperty();
 }
 
 void ABattlefieldPlayerController::PlayerTick(float DeltaTime)
@@ -23,6 +25,7 @@ void ABattlefieldPlayerController::BeginPlay()
 	if (userWidget) {
 		userWidget->AddToViewport();
 	}
+	
 }
 
 void ABattlefieldPlayerController::SetupInputComponent()

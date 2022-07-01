@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
-
+#include "../LoadManager.h"
 #include "BattlefieldPlayerController.generated.h"
 
 /**
